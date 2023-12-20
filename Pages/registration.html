@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../CSS/register.css">
+    <title>Register Page</title>
+</head>
+   
+<body>
+
+    <nav class="topnav">
+        <ul>
+         <li><a href="#">About PHFAS</a></li>
+         <li><a href="../login.html">Logout</a></li>
+        </ul> 
+    </nav>
+
+    <header>
+        <h1>Premium
+            Health Facility Access System</h1>
+    </header>
+
+<section class="row">
+
+    <article class="col-s-12">
+       <div class="form">
+        <form  method="post" action="Pages/registration.html" autocomplete="off">
+
+            <div class="form-control label">
+                <label for="name" id="label-name">
+                    First Name
+                </label><br>
+    
+                <!-- Input Type Text -->
+                <input type="text"
+                    id="name"
+                    placeholder="Enter your firstname" required/>
+            </div>
+
+            <div class="form-control label">
+                <label for="name" id="label-name">
+                    Middle Name
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="text"
+                    id="name"
+                    placeholder="optional" />
+            </div>
+            
+            <div class="form-control label">
+                <label for="name" id="label-name">
+                    Last Name
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="text"
+                    id="name"
+                    placeholder="Enter your lastname" required />
+            </div>
+
+            <div class="form-control">
+                <label for="sex">
+                    Sex:
+                </label>
+    
+                <!-- Input Type Radio Button -->
+                <label for="sex-1">
+                    <input type="radio"
+                        id="sex-1"
+                        name="sex">Male</input>
+                </label>
+                <label for="sex-2">
+                    <input type="radio"
+                        id="sex-2"
+                        name="sex">Female</input>
+                </label>
+            </div>
+                
+            <div class="form-control label">
+                <label for="birthdate">Date Of Birth: </label>
+                <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy">
+            </div>  
+            
+            <div class="form-control">
+                <label>
+                    Below 18 Years?
+                </label>
+    
+                <!-- Input Type Radio Button -->
+                <label for="recommed-1">
+                    <input type="radio"
+                        id="recommed-1"
+                        name="recommed">Yes</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                        id="recommed-2"
+                        name="recommed">No</input>
+                </label>
+            </div>
+
+            <div class="form-control label">
+                <label for="name" id="label-name">
+                    If Yes,Enter Parent/Guardian Name
+                </label>
+    
+                <!-- Input Type Text -->
+                <input type="text"
+                    id="name"
+                    placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-control label">
+                <label for="tel">Telephone Number:</label>
+                <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" required>
+            </div>
+
+            <div class="form-control label">
+                <label for="email" id="label-email">
+                    Email
+                </label>
+    
+                <!-- Input Type Email-->
+                <input type="email"
+                    id="email"
+                    placeholder="Bob@gmail.com" required />
+            </div>
+                
+            <div class="form-control label">
+                <label for="password">
+                    Password:</label>
+                        <input type="password" name="password" id="pass" maxlength="17" 
+                            required inputmode="numeric" placeholder="*********">
+            </div>  
+
+            <div class="form-control label">
+                <label for="password">
+                    Confirm Password:</label>
+                        <input type="password" name="password" id="pass" maxlength="17" 
+                            required inputmode="numeric" placeholder="*********"> 
+            </div>  
+                
+               <button>
+                <input id="submit" type="submit" value="Submit">
+               </button>
+        </form>
+        </div>
+    </article>
+    
+</section>
+    
+
+</body>
+</html>

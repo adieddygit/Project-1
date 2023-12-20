@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}  
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ [class*="col-"]{
+    float: left;
+    padding: 10px;
+}  
+
+[class*="col-"]{
+    width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+
+
+  .col-1 {
+    width: 8.33%;
+}  
+
+  .col-2 {
+    width: 16.66%;
+}
+
+  .col-3 {
+    width: 25%;
+}
+  .col-4 {
+    width: 33.33%;
+}
+
+  .col-5 {
+    width: 41.66%;
+}
+
+  .col-6 {
+    width: 50%;
+}
+
+  .col-7 {
+    width: 58.33%;
+}
+
+  .col-8 {
+    width: 66.66%;
+}
+
+  .col-9 {
+    width: 75%;
+}
+
+  .col-10 {
+    width: 83.33%;
+}
+
+  .col-11 {
+    width: 91.66%;
+}
+
+  .col-12 {
+    width: 100%;
+}
+}
+
+
+    
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+
+  .col-s-1 {
+    width: 8.33%;
+}
+
+  .col-s-2 {
+    width: 16.66%;
+}
+
+  .col-s-3 {
+    width: 25%;
+}
+
+  .col-s-4 {
+    width: 33.33%;
+}
+
+  .col-s-5 {
+    width: 41.66%;
+}
+
+  .col-s-6 {
+    width: 50%;
+}
+
+  .col-s-7 {
+    width: 58.33%;
+}
+
+  .col-s-8 {
+    width: 66.66%;
+}
+
+  .col-s-9 {
+    width: 75%;
+}
+  .col-s-10 {
+    width: 83.33%;
+}
+
+  .col-s-11 {
+    width: 91.66%;
+}
+
+  .col-s-12 {
+    width: 100%;
+}
+
+}
+
+
+/* For small mobile phone devices*/
+@media only screen and (max-width:600px){
+ body{
+ }
+
+ };
+ {
+.col-s-1{
+    width: 8.33%;
+}
+
+.col-s-2{
+    width: 16.66%;
+}
+
+.col-s-3{
+    width: 25%;
+}
+
+.col-s-4{
+    width: 33.32%;
+}
+
+.col-s-5{
+    width: 41.65%;
+}
+
+.col-s-6{
+    width: 50%;
+}
+
+.col-s-7{
+    width: 58.31%;
+}
+
+.col-s-8{
+    width: 66.64%;
+}
+
+.col-s-9{
+    width: 75%;
+}
+
+.col-s-10{
+    width: 83.3%;
+}
+
+.col-s-11{
+    width: 91.63%;
+}
+
+.col-s-12{
+    width: 100%;
+}
+}
+
+body{
+  background-color: silver-white;
+}
+
+.topnav{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #20b2aa;
+    text-shadow: #000000 1px 1px 1px;
+    box-shadow: #000000 2px 2px 2px 3px;
+    font-weight: bold;
+
+}
+
+.topnav ul{
+    list-style-type: none;
+}
+
+.topnav li{
+    display: inline;
+
+}
+
+.topnav a{
+    text-decoration: none;
+    margin: 30px;
+    margin-top: 50px;
+    float: right;
+    color: #ffffff; 
+    
+}
+
+h1{
+    color: #20b2aa;
+}
+
+h4{
+  text-align: center;
+  color: #20b2aa;
+  text-shadow: #000000 0.5px 0.5px 0.5px;
+}
+
+h1::after{
+  content: "";
+  color: #000000;
+  display: block;
+  font-size: 14px;
+}
+
+header{
+    position:;
+    top: -5px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: #000000 1px 1px 1px;
+}
+
+.img{
+  position: relative;
+  top: 5px;
+  height: 100px;
+}
+
+@keyframes rotate{
+    0%   {transform: rotateY(0deg);}
+    12.5%   {transform: rotateY(45deg);}
+    25%   {transform: rotateY(90deg);}
+    37.5%   {transform: rotateY(135deg);}
+    50%   {transform: rotateY(180deg);}
+    62.5%   {transform: rotateY(225deg);}
+    75%  {transform: rotateY(270deg);}
+    87.5%   {transform: rotateY(315deg);}
+    100%  {transform: rotateY(360deg);}
+}
+
+#animate { 
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+img{
+  position: relative;
+  top: 5px;
+  height: auto;
+  max-width: 100%;
+}
+.div2{
+    position: relative ;
+    top: 5px;
+    left: 0;
+    right: 0;
+    border: #20b2aa solid 2px;
+    margin: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    box-shadow: #000000 3px 3px 3px;
+    border-radius: 20px;
+    text-shadow: #000000 1px 1px 1px;    
+   }
+
+   #login{
+    width: 70px; 
+    height: 25px;
+    background-color: #20b2aa;  
+    color: #ffffff;
+    text-shadow: #000000 1px 1px 1px;    
+   }
+
+   #formlogin{
+       margin: auto;
+       width: 320px;
+   }
+
+  footer{
+    position: relative;
+    top: 40px;
+    font-weight: bold;
+    right: 0;
+    left: 0;
+    background-color: #20b2aa;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    height: 40px;
+    box-shadow: #000000 2px 2px 2px 4px;
+    text-shadow: #000000 1px 1px 1px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+li a{
+   
+    text-decoration: none;
+    font-style: italic;
+}
+
+li a:link{
+  color: #ffc0cb;
+}
+
+li a:visited{
+  color: #ffffff;
+}
+
+li a:active{
+  color: red;
+}
+
+li a:hover{
+  background-color: #000000;
+}

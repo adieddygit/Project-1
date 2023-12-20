@@ -1,9 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <title>Index Page</title>
+    <style>
 
-    </head>
-    <body>
+    </style>
+</head>
+   
+<body>
+    
+        <nav class="topnav">
+            <ul>
+             <li><a href="#">About PHFAS</a></li>
+             <li><a href="Pages/registration.html">Sign-Up</a></li>
+            </ul> 
+        </nav>
+
+        <header>
+            
+            <h1><img class="img" src="Images/images (5).jpeg" height="150px" width="150px" id="animate">
+                Welcome To Premium
+                Health Facility Access System (PHFAS)</h1>
+               
+        </header> 
+            
+
+        </section>  
         
-    </body>
-    </html>
+        <h4>Enter a valid username and password to gain access to the System</h4>
+    <section class="row">
+
+        <div class="col-8" id="div1">
+                    <img style="height: 300px; width: 400px;" src="Images/images.jpeg" alt="image" id="myimage1">
+                    <img style="height: 300px; width: 400px;" src="Images/images (4).png" alt="image" id="myimage2"> 
+        </div>
+                
+        <div class="col-4" id="formlogin">
+                <form class="div2" method="post" action="Pages/list_select.html" autocomplete="off">
+                    <h3>Login Panel</h3>
+                    <label for="email">Email Address</label><br>
+                    <input style="height: 40px;" type="email" name="email" id="email"
+                     placeholder="Bob@gmail.com" required autocomplete="off"><br><br>
+                    <label for="pass">Password</label><br>
+                    <input style="height: 40px;"type="password" name="password" id="pass" minlength="4" 
+                    maxlength="10" required inputmode="numeric" placeholder="********">
+                    <br><br>
+                    <input id="login" type="submit" name="submit" value="Login"><br><br>
+                    Forgot Your Password? <a href="#">Click Here</a>
+                </form>
+            </div>   
+                          
+    </section>
+    <footer>
+        <ul >
+            <li><a href="#">Email:adiemmanuel10@gmail.com</a></li>
+        </ul>
+    </footer>
+    
+    <div class="row">
+        <div class="col-3 col-s-3"></div>
+        <div class="col-6 col-s-9"></div>
+        <div class="col-3 col-s-12"></div>
+    </div>
+     
+</body>
+</html>

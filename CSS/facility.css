@@ -125,6 +125,11 @@ html{
     font-family: "Lucida Sans", sans-serif;
 }
 
+body{
+    background-image: url(../Images/healthcare.jpg);
+    background-size: cover;
+}
+
 .topnav{
     top: 0;
     left: 0;
@@ -147,6 +152,15 @@ html{
     margin: 25px;
     color: rgb(37, 243, 92);
 }
+
+li a:visited{
+    color: pink;
+}
+
+li a:active{
+    color: red;
+}
+
 
 header{
     top: 0px;
@@ -184,8 +198,11 @@ section nav li{
     font-style: italic;
     text-shadow: #000000 1px 1px 1px;
     box-shadow: #000000 3px 3px 3px;
-    border-radius: 10px;   
+    border-radius: 10px;  
+    float: left; 
 }
+
+
 
 li:hover{
     background-color: chartreuse;    
@@ -194,17 +211,21 @@ li:hover{
 
 footer{
     position: relative;
-    top: 5px;
+    top: 25px;
     background-color:rgb(37, 243, 92);
     color: whitesmoke;
     padding: 3px;
     font-size: medium;
     text-shadow: #000000 1px 1px 1px;
     box-shadow: #000000 3px 3px 3px;
-    height: 200px;
+    height: 180px;
     
 }
 
+footer:hover{
+    background-color: chartreuse;
+    color: crimson;
+}
 h4{
     color: #00ff;
 }

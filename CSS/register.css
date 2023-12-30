@@ -32,9 +32,18 @@
 		.topnav a{
 			text-decoration: none;
 			margin: 30px;
+			padding: 20px;
 			color: #ffffff; 
 			text-align: center;
 			
+		}
+
+		li a:visited{
+			color: pink;
+		}
+
+		li a:active{
+			color: red;
 		}
 
 		header{
@@ -46,9 +55,10 @@
 		form {
 			background-color: #fff;
 			max-width: 500px;
-			margin: 50px auto;
+			margin: auto;
 			padding: 30px 20px;
 			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		
 		}
 
 		/* Styling form-control Class */

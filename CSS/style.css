@@ -69,10 +69,6 @@
 }
 }
 
-
-    
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
 
@@ -271,20 +267,22 @@ img{
   height: auto;
   max-width: 100%;
 }
+
 .div2{
     position: relative ;
     top: 5px;
     left: 0;
     right: 0;
-    border: #20b2aa solid 2px;
-    margin: 5px;
+    border: silver solid 0px;
+    margin: 1px;
     padding: 10px;
     width: 300px;
     height: 300px;
     text-align: center;
-    box-shadow: #000000 3px 3px 3px;
+    box-shadow: #20b2aa 1px 1px 1px 1px;
     border-radius: 20px;
-    text-shadow: #000000 1px 1px 1px;    
+    text-shadow: #000000 1px 1px 1px;  
+    margin-inline: auto;  
    }
 
    #login{
@@ -306,6 +304,7 @@ img{
     font-weight: bold;
     right: 0;
     left: 0;
+    text-align: center;
     background-color: #20b2aa;
     padding-bottom: 2px;
     padding-top: 1px;
@@ -325,11 +324,11 @@ li a{
 }
 
 li a:link{
-  color: #ffc0cb;
+  color: #ffffff;
 }
 
 li a:visited{
-  color: #ffffff;
+  color: pink; 
 }
 
 li a:active{

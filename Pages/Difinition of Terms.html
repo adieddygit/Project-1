@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="../">
+    <title>Difinition of Terms</title>
+    <style>
+
+.topnav{
+                top: 0;
+                right: 0;
+                left: 0;
+                font-size: large;
+               
+            }
+
+            .topnav ul{
+                list-style-type: none;
+               
+            }
+
+            .topnav li{
+               display: inline;
+               margin: 30px;
+               text-align: center;
+               color: #20b2aa; 
+               text-shadow: #000000 0.7px 0.7px 0.7px;
+
+            }
+
+header{
+    color: #20b2aa;
+    font-weight: bold;
+    text-shadow: ;
+    text-shadow: #000000 1px 1px 1px;
+    text-align: center;
+}
+
+table{
+    position: relative;
+    top: 30px;
+    border-collapse: collapse;
+    text-shadow: #000000 0.5px 0.5px 0.5px;
+    margin-inline: auto;
+   
+}
+
+th{
+    border: 2px solid #20b2aa;
+    margin: 2px;
+    padding: 5px;
+    color: #20b2aa;   
+}
+
+h3{
+    font-size: xx-large;
+    font-weight: bold;
+    color: purple;
+    text-shadow: #000000 1px 1px 1px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    height: 70px;
+    width: 170px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: #20b2aa;
+    color: #ffffff;
+    text-shadow: #000000 1px 1px 1px;
+
+}
+    </style>
+    <script>
+
+    </script>
+</head>
+   
+<body>
+
+    <nav class="topnav">
+        <ul>
+            <li><a href="../index.html">Logout</a></li>
+            <li><a href="PHFAS.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>TABLE OF MEDICAL TERMS DIFINITION </h1>
+        <h2>Click on the Term</h2>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="appoint">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="appoint">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="control">A panel with list of menus to navigate</h3>
+                    <button
+                    popovertarget="control">Control Panel</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="id">A card given to you that identifies you as being eligible for benefits. The card
+                    must be presented when seeking treatment.</h3>
+                    <button
+                    popovertarget="id">Identification Card</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="primecare">General health care, such as for regular checkups or visits for aches and pains, colds,
+                    the flu; you usually have to see a primary care provider before you can see a specialist or be
+                    referred to another medical professional.</h3>
+                    <button
+                    popovertarget="primecare">Primary care</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="fampractice">A clinic or group of clinicians that provide general care (primary care!). (Maybe
+                    you've had a family doctor before? That doctor is a family practice doctor.).</h3>
+                    <button
+                    popovertarget="fampractice">Family practice</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="physical">A checkup by your health care provider of your overall health.</h3>
+                    <button
+                    popovertarget="physical">Physical</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="copay">A fixed amount of money you pay when you have health insurance at the time of a health
+                    care service, such as seeing a doctor, getting lab tests, and other things.</h3>
+                    <button
+                    popovertarget="copay">Co-pay</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="inpatient">A patient who is staying overnight (admitted) at a hospital or other health care facility.</h3>
+                    <button
+                    popovertarget="inpatient">Inpatient</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="outpatient">A patient receiving care at a health care facility, but not staying overnight. (Outpatient
+                    procedure means you may be having some kind of treatment, but you don't have to stay overnight in
+                    the facility).</h3>
+                    <button
+                    popovertarget="outpatient">Outpatient</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="cash">The amount of money you pay that is not covered by
+                    insurance. This can include deductibles, and co-payments for covered services.</h3>
+                    <button
+                    popovertarget="cash">Cash-and-Carry/Out-of-pocket payment</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="insured">A person or organization covered by an insurance policy.</h3>
+                    <button
+                    popovertarget="insured">Insured</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="ugcare">Treatment for emergencies that are not life threatening but are emergencies..</h3>
+                    <button
+                    popovertarget="ugcare">Urgent care</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="medrec">Your health information as recorded by health plans and health care providers.</h3>
+                    <button
+                    popovertarget="medrec">Medical records</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="ecg">Electrocardiogram, a device that records heartbeats.</h3>
+                    <button
+                    popovertarget="ecg">ECG or EKG</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="majormed">A plan that provides much broader coverage than the basic medical plan up to a
+                    high limit. You may increase your coverage by paying an additional amount more than your basic
+                    premium.</h3>
+                    <button
+                    popovertarget="majormed">Major Medical</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="ems">Emergency medical services.</h3>
+                    <button
+                    popovertarget="ems">EMS</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="ultsound">Imaging produced by high-frequency sound waves, usually used to view internal
+                    organs.</h3>
+                    <button
+                    popovertarget="ultsound">Ultrasound</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="mastectomy">Surgical procedure to remove part or all of the breast.</h3>
+                    <button
+                    popovertarget="mastectomy">Mastectomy</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="hysterectomy">Surgical procedure to remove the uterus.</h3>
+                    <button
+                    popovertarget="hysterectomy">Hysterectomy</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="biopsy">Removal of a small tissue sample for testing.</h3>
+                    <button
+                    popovertarget="biopsy">Biopsy</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="corobypas">Surgical transplant of a healthy blood vessel into the heart to bypass or replace
+                    an unhealthy vessel.</h3>
+                    <button
+                    popovertarget="corobypas">Coronary bypass</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="leadtest">A test to reveal the quantity of lead in the bloodstream.</h3>
+                    <button
+                    popovertarget="leadtest">Lead test</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="occult">Use of a chemically treated card or pad to test for blood hidden in a stool
+                    sample.</h3>
+                    <button
+                    popovertarget="occult">Occult blood screen</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="lft">Liver function test.</h3>
+                    <button
+                    popovertarget="lft">LFT</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="mri">Magnetic resonance imaging, diagnostic imaging that uses magnetism and radio waves to
+                    produce images of internal organs.</h3>
+                    <button
+                    popovertarget="mri">MRI</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="endoscope">long flexible tube with its own special lighting and camera used to look into the
+                    body.</h3>
+                    <button
+                    popovertarget="endoscope">Endoscope</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="csection">Shorthand for cesarean section the surgical delivery of a baby through the abdominal
+                    wall.</h3>
+                    <button
+                    popovertarget="csection">C-section</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="dialysis">Procedure to filter blood for patients with kidney failure.</h3>
+                    <button
+                    popovertarget="dialysis">Dialysis</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="bgas">A test to show the gas-phase components of blood including oxygen, carbon dioxide, pH
+                    balance, etc.</h3>
+                    <button
+                    popovertarget="bgas">Blood gas</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="lap">Any surgery involving an incision in the abdominal wall.</h3>
+                    <button
+                    popovertarget="lap">Laparotomy</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="ambucare">Medical services provided on an outpatient (non-hospitalized) basis. Services
+                    may include diagnosis, treatment, surgery, and rehabilitation.</h3>
+                    <button
+                    popovertarget="ambucare">Ambulatory Care</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="pci">A procedure, such as angioplasty, that opens a
+                    blocked blood vessel.</h3>
+                    <button
+                    popovertarget="pci">Percutaneous Coronary Intervention (PCI)</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+                <th>
+                    <h3 popover 
+                    id="myheader">A panel to book appointments for services within a specified time frame.</h3>
+                    <button
+                    popovertarget="myheader">Appointment Calender</button></p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>

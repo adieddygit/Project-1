@@ -251,6 +251,7 @@ header{
 #sidenav li{
     position: relative;
     top: 50px;
+    left: -20%;
     margin: 2px;
     margin-inline: auto;
     padding: 3px;
@@ -262,6 +263,7 @@ header{
     font-weight: bold;
     text-shadow: #000000 2px 2px 2px;
     box-shadow: #000000 1px 2px 5px;
+    margin-inline: auto;
 
 
 } 
@@ -281,7 +283,6 @@ article{
     margin-inline: auto;
     text-shadow: #000000 2px 4px;
     box-shadow: #000000 1px 2px 5px;
-
 
 }
 

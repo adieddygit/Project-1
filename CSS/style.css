@@ -178,10 +178,6 @@
 }
 }
 
-body{
-  background-color: silver-white;
-}
-
 .topnav{
     top: 0;
     left: 0;
@@ -218,7 +214,7 @@ h1{
 
 h4{
   text-align: center;
-  color: #20b2aa;
+  color: blueviolet;
   text-shadow: #000000 0.5px 0.5px 0.5px;
 }
 
@@ -230,8 +226,8 @@ h1::after{
 }
 
 header{
-    position:;
-    top: -5px;
+    position: none;
+    top: 0px;
     text-align: center;
     font-weight: bolder;
     text-shadow: #000000 1px 1px 1px;

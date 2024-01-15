@@ -286,6 +286,11 @@ article{
 
 }
 
+p b{
+  color: #20b2aa;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .container2{
     background-color: #20b2aa;
     color: #ffffff;
@@ -340,3 +345,31 @@ footer{
     font-weight: bold;
     text-shadow: #000000 0.5px 0.5px 0.5px;
 }
+
+button{
+  position: relative;
+  top: 50px;
+  left: 25px;
+  margin: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  height: 30px;
+  width: 100px;
+  font-size: larger;
+  font-weight: bold;
+  background-color: #20b2aa;
+  color: #ffffff;
+  text-shadow: #000000 2px 2px 2px;
+  box-shadow: #000000 1px 2px 5px;
+
+}
+
+h3{
+  height: 100px;
+  width: 300px;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #20b2aa;
+  text-shadow: #000000 1px 2px 5px;
+}
+

@@ -273,8 +273,6 @@ p b:first-child {
 }
 
 section nav {
-  /* width: 15%; */
-  /* float: left; */
   padding: 2px;
   background-color: purple;
   color: #f1f1f1;

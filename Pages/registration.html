@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="emmanuadi">
-    <meta name="viewport" content="width=device width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descrition" content="Dynamic Web Development">
     <meta name="keywords" content="HTML 5, CSS3, JavaScript">
     <link rel="stylesheet" type="text/css" href="../CSS/register.css">
+    
     <title>Register Page</title>
 </head>
    
@@ -28,43 +29,43 @@
 
     <article class="col-s-12">
        <div class="form">
-        <form  method="post" action="Pages/registration.html" autocomplete="off">
+        <form  method="post" action="#" name="register" onsubmit="return validateregister();" autocomplete="off">
 
             <div class="form-control label">
-                <label for="name" id="label-name">
+                <label for="fname" id="label-name">
                     First Name
                 </label><br>
     
                 <!-- Input Type Text -->
                 <input type="text"
-                    id="name"
-                    placeholder="Enter your firstname" required/>
+                    id="fname"
+                   onblur="validatefname();" placeholder="Enter your firstname" autocomplete="off"/><span id="fnameErr"></span>
             </div>
 
             <div class="form-control label">
-                <label for="name" id="label-name">
+                <label for="mname" id="label-name">
                     Middle Name
                 </label>
     
                 <!-- Input Type Text -->
                 <input type="text"
-                    id="name"
+                    id="mname"
                     placeholder="optional" />
             </div>
             
             <div class="form-control label">
-                <label for="name" id="label-name">
+                <label for="lname" id="label-name">
                     Last Name
                 </label>
     
                 <!-- Input Type Text -->
                 <input type="text"
-                    id="name"
-                    placeholder="Enter your lastname" required />
+                    id="lname"
+                    onblur="validatelname();" placeholder="Enter your lastname" autocomplete="off"/><span id="lnameErr"></span>
             </div>
 
             <div class="form-control">
-                <label for="sex">
+                <label for="sex-1">
                     Sex:
                 </label>
     
@@ -82,17 +83,17 @@
             </div>
                 
             <div class="form-control label">
-                <label for="birthdate">Date Of Birth: </label>
+                <label for="dob">Date Of Birth: </label>
                 <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy">
             </div>  
             
             <div class="form-control">
-                <label>
+                <label for="recommed-1">
                     Below 18 Years?
                 </label>
     
                 <!-- Input Type Radio Button -->
-                <label for="recommed-1">
+                <label>
                     <input type="radio"
                         id="recommed-1"
                         name="recommed">Yes</input>
@@ -112,12 +113,12 @@
                 <!-- Input Type Text -->
                 <input type="text"
                     id="name"
-                    placeholder="Enter full name" required />
+                    placeholder="Enter full name"  autocomplete="off"/>
             </div>
 
             <div class="form-control label">
                 <label for="tel">Telephone Number:</label>
-                <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" required>
+                <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" autocomplete="off">
             </div>
 
             <div class="form-control label">
@@ -128,32 +129,34 @@
                 <!-- Input Type Email-->
                 <input type="email"
                     id="email"
-                    placeholder="Bob@gmail.com" required />
+                    placeholder="Bob@gmail.com" autocomplete="off"/>
             </div>
                 
             <div class="form-control label">
-                <label for="password">
+                <label for="pass2">
                     Password:</label>
-                        <input type="password" name="password" id="pass" maxlength="17" 
-                            required inputmode="numeric" placeholder="*********">
+                        <input type="password" name="password" id="pass1" maxlength="17" 
+                            inputmode="numeric" placeholder="*********">
             </div>  
 
             <div class="form-control label">
-                <label for="password">
+                <label for="pass1">
                     Confirm Password:</label>
-                        <input type="password" name="password" id="pass" maxlength="17" 
-                            required inputmode="numeric" placeholder="*********"> 
+                        <input type="password" name="password" id="pass2" maxlength="17" 
+                            inputmode="numeric" placeholder="*********"> 
             </div>  
                 
                <button>
                 <input id="submit" type="submit" value="Submit">
                </button>
+               
         </form>
         </div>
     </article>
     
 </section>
     
+<script src="../Scripts/register.js"></script>
 
 </body>
 </html>

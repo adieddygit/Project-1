@@ -1,162 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="emmanuadi">
+<!doctype html>
+  <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/register.css"/>
+    <title>Registration Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrition" content="Dynamic Web Development">
-    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
-    <link rel="stylesheet" type="text/css" href="../CSS/register.css">
-    
-    <title>Register Page</title>
-</head>
-   
-<body>
+    <style>
+    span{
+      color:red;
+      font-size: 15px;
+    }
+</style>
+  </head>
+  <body>
 
     <nav class="topnav">
-        <ul>
-         <li><a href="PHFAS.html">Home</a></li>
-         <li><a href="../index.html">Logout</a></li>
-        </ul> 
-    </nav>
+      <ul>
+       <li><a href="PHFAS.html">Home</a></li>
+       <li><a href="../index.html">Logout</a></li>
+      </ul> 
+  </nav>
 
-    <header>
-        <h1>Premium
-            Health Facility Access System</h1>
-    </header>
+  <header>
+      <h1>Premium
+          Health Facility Access System</h1>
+  </header>
 
-<section class="row">
+    <form method="post" name="register" onsubmit="return validateregister2();">
 
-    <article class="col-s-12">
-       <div class="form">
-        <form  method="post" action="#" name="register" onsubmit="return validateregister();" autocomplete="off">
+      <div class="form-control label">
+    <label for="fn">First Name:</label>
+    <input type="text" name="fn" id="fn" onblur="return validatefn();"/><span id="fnErr"></span><br/>
+    </div>
 
-            <div class="form-control label">
-                <label for="fname" id="label-name">
-                    First Name
-                </label><br>
+    <div class="form-control label">
+    <label for="mn">Middle Name:</label>
+    <input type="text" name="mn" id="mn"/>
+    </div>
+
+    <div class="form-control label">
+    <label for="ln">Last Name:</label>
+    <input type="text" name="ln" id="ln" onblur="return validateln();"/><span id="lnErr"></span><br/>
+    </div>
+
+    <div class="form-control">
+      <label for="sex-1">
+          Sex:
+      </label>
+
+      <!-- Input Type Radio Button -->
+      <label for="sex-1">
+        <input type="radio"
+            id="sex-1"
+            name="sex">Male</input><span id="sexErr"></span>
+    </label>
+    <label for="sex-2">
+        <input type="radio"
+            id="sex-2"
+            name="sex">Female</input>
+    </label>
+
+    <div class="form-control label">
+      <label for="dob">Date Of Birth: </label>
+      <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy"><span id="dobErr"></span>
+  </div>  
+  
+  <div class="form-control">
+      <label for="recommed-1">
+          Below 18 Years?
+      </label>
+
+      <!-- Input Type Radio Button -->
+      <label>
+          <input type="radio"
+              id="recommed-1"
+              name="recommed-1">Yes</input><span id="recErr"></span><br/>
+      </label>
+
+      <label for="recommed-2">
+        <input type="radio"
+            id="recommed-2"
+            name="recommed-2">No</input>
+    </label>
+</div>
+
+<div class="form-control label">
+    <label for="name" id="label-name">
+        If Yes,Enter Parent/Guardian Name
+    </label>
+
+    <!-- Input Type Text -->
+    <input type="text"
+        id="name"
+        placeholder="Enter full name"  autocomplete="off"/>
+</div>
+
+<div class="form-control label">
+    <label for="tel">Telephone Number:</label>
+    <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" autocomplete="off">
+</div>
+
+  <!-- Input Type Email-->
+  <div class="form-control label">
+    <label for="cae">Email</label><br/>
+    <input type="email" name="cae" value="" id="cae" placeholder="Bob@gmail.com" autocomplete="off"/><span id="caeErr"></span><br/>
+    </div>
+  
+    <div class="form-control label">
+    <label for="cp">Create password</label><br/>
+    <input type="password" name="cp" value="" id="cp"  maxlength="17" 
+    inputmode="numeric" placeholder="*********"/><span id="cpErr"></span><br/>
+      </div>
+
+    <div class="form-control label">
+    <label for="cop">Confirm password</label><br/>
+    <input type="password" name="cop" value="" id="cop" maxlength="17" 
+    inputmode="numeric" placeholder="*********"/><span id="copErr"></span><br/>
+    </div>
+
     
-                <!-- Input Type Text -->
-                <input type="text"
-                    id="fname"
-                   onblur="validatefname();" placeholder="Enter your firstname" autocomplete="off"/><span id="fnameErr"></span>
-            </div>
-
-            <div class="form-control label">
-                <label for="mname" id="label-name">
-                    Middle Name
-                </label>
-    
-                <!-- Input Type Text -->
-                <input type="text"
-                    id="mname"
-                    placeholder="optional" />
-            </div>
-            
-            <div class="form-control label">
-                <label for="lname" id="label-name">
-                    Last Name
-                </label>
-    
-                <!-- Input Type Text -->
-                <input type="text"
-                    id="lname"
-                    onblur="validatelname();" placeholder="Enter your lastname" autocomplete="off"/><span id="lnameErr"></span>
-            </div>
-
-            <div class="form-control">
-                <label for="sex-1">
-                    Sex:
-                </label>
-    
-                <!-- Input Type Radio Button -->
-                <label for="sex-1">
-                    <input type="radio"
-                        id="sex-1"
-                        name="sex">Male</input>
-                </label>
-                <label for="sex-2">
-                    <input type="radio"
-                        id="sex-2"
-                        name="sex">Female</input>
-                </label>
-            </div>
-                
-            <div class="form-control label">
-                <label for="dob">Date Of Birth: </label>
-                <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy">
-            </div>  
-            
-            <div class="form-control">
-                <label for="recommed-1">
-                    Below 18 Years?
-                </label>
-    
-                <!-- Input Type Radio Button -->
-                <label>
-                    <input type="radio"
-                        id="recommed-1"
-                        name="recommed">Yes</input>
-                </label>
-                <label for="recommed-2">
-                    <input type="radio"
-                        id="recommed-2"
-                        name="recommed">No</input>
-                </label>
-            </div>
-
-            <div class="form-control label">
-                <label for="name" id="label-name">
-                    If Yes,Enter Parent/Guardian Name
-                </label>
-    
-                <!-- Input Type Text -->
-                <input type="text"
-                    id="name"
-                    placeholder="Enter full name"  autocomplete="off"/>
-            </div>
-
-            <div class="form-control label">
-                <label for="tel">Telephone Number:</label>
-                <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" autocomplete="off">
-            </div>
-
-            <div class="form-control label">
-                <label for="email" id="label-email">
-                    Email
-                </label>
-    
-                <!-- Input Type Email-->
-                <input type="email"
-                    id="email"
-                    placeholder="Bob@gmail.com" autocomplete="off"/>
-            </div>
-                
-            <div class="form-control label">
-                <label for="pass2">
-                    Password:</label>
-                        <input type="password" name="password" id="pass1" maxlength="17" 
-                            inputmode="numeric" placeholder="*********">
-            </div>  
-
-            <div class="form-control label">
-                <label for="pass1">
-                    Confirm Password:</label>
-                        <input type="password" name="password" id="pass2" maxlength="17" 
-                            inputmode="numeric" placeholder="*********"> 
-            </div>  
-                
-               <button>
-                <input id="submit" type="submit" value="Submit">
-               </button>
-               
-        </form>
-        </div>
-    </article>
-    
-</section>
-    
-<script src="../Scripts/register.js"></script>
-
-</body>
-</html>
+    <div class="form-control label">
+    <input name="sub" type="submit" value="Register">
+    </div>
+  </form>
+  <script src="../Scripts/register2.js"></script>
+  </body>
+  </html>

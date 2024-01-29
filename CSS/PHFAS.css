@@ -266,23 +266,28 @@ header{
     margin-inline: auto;
 
 
-} 
-
-article{
-    position: relative;
-    top: 0px;
-    
 }
 
 .container1{
+    position: relative;
+    top: 60px;
     background-color: gray;
     color: #ffffff;
-    height: 400px;
+    height: 350px;
     width: 700px;
+    padding-top: 25px;
     border-radius: 20px;
     margin-inline: auto;
     text-shadow: #000000 2px 4px;
     box-shadow: #000000 1px 2px 5px;
+
+}
+
+p{
+  text-align: center;
+  font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  text-shadow: #000000 2px 2px 2px;
 
 }
 
@@ -304,15 +309,6 @@ p b{
     border-radius: 20px;
     text-shadow: #000000 2px 2px 2px;
     box-shadow: #000000 2px 2px 4px;
-
-}
-
-p{
-  text-align: center;
-  font-family: system-ui, 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 60px;
-  padding-top: 100px;
-  text-shadow: #000000 2px 2px 2px;
 
 }
 

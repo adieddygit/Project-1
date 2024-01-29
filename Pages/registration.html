@@ -23,23 +23,24 @@
   <header>
       <h1>Premium
           Health Facility Access System</h1>
+          <p>Please Register Here</p>
   </header>
 
-    <form method="post" name="register" onsubmit="return validateregister2();">
+    <form method="get" action="personalinfostorage.html" name="register" onsubmit="return validateregister2();">
 
       <div class="form-control label">
     <label for="fn">First Name:</label>
-    <input type="text" name="fn" id="fn" onblur="return validatefn();"/><span id="fnErr"></span><br/>
+    <input type="text" name="First Name" id="fn" onblur="return validatefn();" autocomplete="off"/><span id="fnErr"></span><br/>
     </div>
 
     <div class="form-control label">
     <label for="mn">Middle Name:</label>
-    <input type="text" name="mn" id="mn"/>
+    <input type="text" name="Middle Name" id="mn" placeholder="optional" autocomplete="off"/>
     </div>
 
     <div class="form-control label">
     <label for="ln">Last Name:</label>
-    <input type="text" name="ln" id="ln" onblur="return validateln();"/><span id="lnErr"></span><br/>
+    <input type="text" name="Last Name" id="ln" onblur="return validateln();" autocomplete="off"/><span id="lnErr"></span><br/>
     </div>
 
     <div class="form-control">
@@ -49,19 +50,19 @@
 
       <!-- Input Type Radio Button -->
       <label for="sex-1">
-        <input type="radio"
+        <input type="radio" value="Male"
             id="sex-1"
-            name="sex">Male</input><span id="sexErr"></span>
+            name="Sex">Male</input>
     </label>
     <label for="sex-2">
-        <input type="radio"
+        <input type="radio" value="Female"
             id="sex-2"
-            name="sex">Female</input>
-    </label>
+            name="Sex">Female</input>
+    </label><span id="sexErr"></span>
 
     <div class="form-control label">
       <label for="dob">Date Of Birth: </label>
-      <input type="date" name="dob" id="dob" placeholder="mm/dd/yyyy"><span id="dobErr"></span>
+      <input type="date" name="Date of Birth" id="dob" placeholder="mm/dd/yyyy"><span id="dobErr"></span>
   </div>  
   
   <div class="form-control">
@@ -70,16 +71,14 @@
       </label>
 
       <!-- Input Type Radio Button -->
-      <label>
-          <input type="radio"
-              id="recommed-1"
-              name="recommed-1">Yes</input><span id="recErr"></span><br/>
+      <label for="recommed-1">
+          <input type="radio" value="Yes" name="Below 18"
+              id="recommed-1">Yes</input><span id="recErr"></span><br/>
       </label>
 
       <label for="recommed-2">
-        <input type="radio"
-            id="recommed-2"
-            name="recommed-2">No</input>
+        <input type="radio" value="No" name="Below 18"
+            id="recommed-2">No</input>
     </label>
 </div>
 
@@ -91,35 +90,35 @@
     <!-- Input Type Text -->
     <input type="text"
         id="name"
-        placeholder="Enter full name"  autocomplete="off"/>
+        placeholder="Enter full name" name="Parent/Guardian Name" autocomplete="off" autocomplete="off"/>
 </div>
 
 <div class="form-control label">
     <label for="tel">Telephone Number:</label>
-    <input type="phone number" name="tel" id="tel" placeholder="(+233) 02200231003" autocomplete="off">
+    <input type="phone number" name="Telephone Number" id="tel" placeholder="(+233) 02200231003" autocomplete="off">
 </div>
 
   <!-- Input Type Email-->
   <div class="form-control label">
     <label for="cae">Email</label><br/>
-    <input type="email" name="cae" value="" id="cae" placeholder="Bob@gmail.com" autocomplete="off"/><span id="caeErr"></span><br/>
+    <input type="email" name="Email" value="" id="cae" placeholder="Bob@gmail.com" autocomplete="off"/><span id="caeErr"></span><br/>
     </div>
   
     <div class="form-control label">
     <label for="cp">Create password</label><br/>
-    <input type="password" name="cp" value="" id="cp"  maxlength="17" 
+    <input type="password" name="Password" value="" id="cp"  maxlength="17" 
     inputmode="numeric" placeholder="*********"/><span id="cpErr"></span><br/>
       </div>
 
     <div class="form-control label">
     <label for="cop">Confirm password</label><br/>
-    <input type="password" name="cop" value="" id="cop" maxlength="17" 
+    <input type="password" name="Password" value="" id="cop" maxlength="17" 
     inputmode="numeric" placeholder="*********"/><span id="copErr"></span><br/>
     </div>
 
     
     <div class="form-control label">
-    <input name="sub" type="submit" value="Register">
+    <input name="" type="submit" onclick="collectAndDisplayValues();" value="Register">
     </div>
   </form>
   <script src="../Scripts/register2.js"></script>

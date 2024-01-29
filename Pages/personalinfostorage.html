@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="emmanuadi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Dynamic Web Development">
+    <meta name="keywords" content="HTML 5, CSS3, JavaScript">
+    <link rel="stylesheet" type="text/css" href="">
+    <style>
+        h1{
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+            color: #20b2aa;
+            text-shadow: #000000 1px 1px 1px;
+        }
+
+        #displayValues{
+            color: #20b2aa;
+            font-size: larger;
+            font-weight: bold;
+            text-shadow: #000000 1px 1px 1px;
+        }  
+
+        .topnav{
+			position: relative;
+			top: 10px;
+			left: 0;
+			right: 0;
+			background-color: #20b2aa;
+			text-shadow: #000000 1px 1px 1px;
+			font-weight: bold;
+		
+		}
+        
+		.topnav ul{
+			list-style-type: none;
+			
+		}
+		
+		.topnav li{
+			display: inline;
+			
+		
+		}
+		
+		.topnav a{
+			text-decoration: none;
+			margin: 50px;
+			padding: 20px;
+			color: #ffffff; 
+			text-align: center;
+            text-shadow: #000000 1px 1px 1px;
+			
+		}
+
+		li a:visited{
+			color: pink;
+		}
+
+		li a:active{
+			color: red;
+		}
+    </style>
+
+    <title> Page</title>
+</head>
+   
+<body>
+
+    <nav class="topnav">
+        <ul>
+         <li><a href="../index.html">Logout</a></li>
+         <li><a href="PHFAS.html">Home</a></li>
+        </ul> 
+    </nav>
+        
+    <h1>Personal Information</h1>
+    <div id="displayValues"></div>
+
+    <script>
+         window.onload = function () {
+            //Get the query string parameters from the URL
+             let urlParams = new URLSearchParams(window.location.search);
+            
+            // Create a map to store the values
+             let valuesMap = new Map();
+
+            // Iterate over the parameters and add them to the map
+             urlParams.forEach((value, key) => {
+                valuesMap.set(key, value);
+             });
+
+            // Display values on the page
+             displayValues(valuesMap);
+         };
+
+        function displayValues(valuesMap) {
+            let displayContainer = document.getElementById("displayValues");
+            displayContainer.innerHTML = "";
+
+            valuesMap.forEach((value, key) => {
+                let valueParagraph = document.createElement("p");
+                valueParagraph.textContent = `${key}: ${value}`;
+                displayContainer.appendChild(valueParagraph);
+            });
+        }
+    </script>
+    
+
+    </body>
+
+    </html>

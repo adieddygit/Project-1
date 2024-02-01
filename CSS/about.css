@@ -336,7 +336,16 @@ footer {
 }
 
 #myheader{
-  background-color: purple;
-  color: #f1f1f1;
+  background-color: blue;
+  color:  #ffffff;
+  text-shadow: #000000 1px 1px 1px;
+}
+
+h3{
+  font-size: xx-large;
+  font-weight: bold;
+  height: 400px;
+  background-color: #ffffff;
+  color: #20b2aa;
   text-shadow: #000000 1px 1px 1px;
 }

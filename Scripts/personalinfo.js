@@ -17,8 +17,6 @@ window.onload = function(){
         let sex1 = document.forms.register.sex1.value;
         let email = document.forms.register.email.value; 
         let cop = document.forms.register.cop.value;
-        let ccop = document.forms.register.ccop.value;
-        
         let recommend= document.forms.register.recommend.value;
         let g_p= document.forms.register.g_p.value;
         let dob= document.forms.register.dob.value;

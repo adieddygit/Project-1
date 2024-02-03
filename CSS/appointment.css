@@ -244,7 +244,7 @@ nav li{
     margin: 5px;
     padding-top: 10px;
     height: 50px;
-    width: 345px;
+    width: 340px;
     background-color: #20b2aa;
     text-align: center;
     font-size: large;
@@ -260,9 +260,14 @@ li:active{
     color: red;
 }
 
+div{
+  position: relative;
+  top: 60px;
+}
+
 table{
     position: relative;
-    top: 80px;
+    top: 60px;
     left: 0;
     right: 0;
     border-collapse: collapse;
@@ -312,6 +317,5 @@ th{
     color: #ffffff;
     text-align: center;
     padding-top: 5px;
-    box-shadow: #000000 2px 2px 2px 2px;
-    
+    box-shadow: #000000 2px 2px 2px 2px;   
 }
